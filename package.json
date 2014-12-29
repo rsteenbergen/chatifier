@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/rsteenbergen/chatifier"
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/rsteenbergen/chatifier/issues"
   },
-  "homepage": "https://github.com/rsteenbergen/chatifier"
+  "homepage": "https://github.com/rsteenbergen/chatifier", 
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  }  
 }
